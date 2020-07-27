@@ -71,7 +71,7 @@ header .icons .fa-search {
 }
 
 .infoAndUpNext .info {
-  padding: var(--padding);
+  padding-right: var(--padding);
 }
 
 .info .metadata .hashtags {

@@ -1,5 +1,5 @@
 const moreBtn = document.querySelector(
-  ".info .metadata .titleAndButton .moreBtn "
+  ".info .metadata .titleAndButton .moreBtn"
 );
 
 const title = document.querySelector(".info .metadata .titleAndButton .title");
