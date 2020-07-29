@@ -3,11 +3,6 @@ function getTime() {
   //     console.log(now);
   //     dday = new Date(2020,07,29,16,00,00); // 원하는 날짜, 시간 정확하게 초단위까지. 0이 1월입니다
 
-  // 	now = new Date() //접속자 PC 기준
-  // 	now = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
-  // 	dday = new Date(2020,07,28,18,00,00);//한국기준
-  // 	dday = Date.UTC(dday.getUTCFullYear(), dday.getUTCMonth(), dday.getUTCDate(), dday.getUTCHours(), dday.getUTCMinutes(), dday.getUTCSeconds());
-
   var now = new Date().getTime() + new Date().getTimezoneOffset() * 1000 * 60; //시스템 date를 UTC로 변경
   var dday = new Date(2020, 06, 29, 12, 00, 00) - 540 * 1000 * 60; //한국기준-UTC 기준을 위한 오프셋, 06이 7월, 540은 한국의 타임존 오프셋
 
