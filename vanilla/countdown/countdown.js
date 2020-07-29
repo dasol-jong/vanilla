@@ -17,10 +17,10 @@ function getTime() {
   hours = ((dday - now) % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60);
   hhRound = Math.floor(hours);
 
-  minutes = ((dday - now - 1) % (1000 * 60 * 60)) / (1000 * 60);
+  minutes = ((dday - now) % (1000 * 60 * 60)) / (1000 * 60);
   mRound = Math.floor(minutes);
 
-  seconds = ((dday - now) % (1000 * 60)) / 1000;
+  seconds = ((dday - now - 1) % (1000 * 60)) / 1000;
   sRound = Math.round(seconds);
 
   //document.getElementById("counter1").innerHTML = dRound;
