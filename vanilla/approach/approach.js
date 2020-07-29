@@ -10,9 +10,3 @@ for (let i = 0; i < getIn.length; i++) {
     title.style.display = "none";
   });
 }
-
-function clicked() {
-  console.log("hehe");
-}
-
-// getIn.onclick();
