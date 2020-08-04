@@ -10,9 +10,9 @@ function getUserInfo() {
     response.text().then(function (text) {
       document.getElementById("userInfo").innerHTML = text;
     });
-    //fetch 뒤에는 연결할 서버 혹은 파일
-    //fetch api에 따르면 fetch함수를 부르면서 부르는 callback 함수의 첫 번째 인자로는
-    //'response'라는 객체를 받는다고 설명되어 있다.
+    // fetch 뒤에는 연결할 서버 혹은 파일
+    // fetch api에 따르면 fetch함수를 부르면서 부르는 callback 함수의 첫 번째 인자로는
+    // 'response'라는 객체를 받는다고 설명되어 있다.
 
     if (response.status === 200) {
       console.log("데이터 통신 성공!");
@@ -21,6 +21,7 @@ function getUserInfo() {
     }
   });
 }
+
 // 위 코드를 해석해보면,
 // 클릭 버튼을 누르면 fetch가 연결 된 getUserInfo 함수가 실행된다.
 // work1.html에 있는 내용이 userInfo라고 만들어 놓은 부분에 넣어진다.
@@ -29,3 +30,34 @@ function getUserInfo() {
 // 그게 아니라면 데이터 통신 실패란 경고창을 띄우게 하였다.
 
 // 출처: https://velog.io/@haileyself/TIL-Ajax-fetch-promise-uak0t7wne7
+
+// // GET
+// fetch("/test.json") // (/test.json) 호출(GET)
+//   .then((e) => e.json()) // 비동기
+//   .then((e) => console.log(e)); // 비동기
+
+// // POST
+// fetch("board/write", {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json; charset=ut f-8",
+//   },
+//   body: JSON.stringify({ title: "제목입니다.", text: "내용입니다." }),
+// })
+//   .then((e) => e.json())
+//   .then((e) => {});
+
+// // POST 프로토콜로 JSON 인코딩된 데이터 보내기
+// var url = "https://example.com/profile";
+// var data = { username: "example" };
+
+// fetch(url, {
+//   method: "POST",
+//   body: JSON.stringify(data),
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+// })
+//   .then((response) => response.json())
+//   .then((response) => console.log("success", JSON.stringify(response)))
+//   .catch((error) => console.log("error", error));
