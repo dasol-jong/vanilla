@@ -1,5 +1,6 @@
 document.getElementById("clickBtn").addEventListener("click", getUserInfo);
 
+// fetch란 Ajax를 구현하는 기술중 최신 기술이다.
 // Ajax 특징:
 // 1) 페이지 새로고침 없이 서버에 요청
 // 2) 서버로부터 데이터를 받고 작업을 수행
@@ -26,3 +27,5 @@ function getUserInfo() {
 // response가 객체인것을 알았기에 이를 활용하여 로직을 짤 수 있게 되었다.
 // 만약 response.status === 200 이면 통신 성공! 이란 콘솔을 띄우고
 // 그게 아니라면 데이터 통신 실패란 경고창을 띄우게 하였다.
+
+// 출처: https://velog.io/@haileyself/TIL-Ajax-fetch-promise-uak0t7wne7
